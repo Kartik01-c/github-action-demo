@@ -1,0 +1,11 @@
+name: My first Github Action # Workflow name
+
+on:  # Trigger (when will my workflow run?)
+  push: # whenever someone pushes code to the repository
+
+jobs: # What jobs will run in this workflow?
+  hello: # Job name
+    runs-on: ubuntu-latest # The type of machine to run the job on
+    steps: # List of commands to run
+      - name: Hello World # Step name
+        run: echo "Hello, World!" # Command to run
